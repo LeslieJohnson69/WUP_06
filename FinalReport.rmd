@@ -50,6 +50,15 @@ It appears that more blacks oppose CAPPUN compared to the others and whites, who
 
 ### Numerical Descriptive Results
 
+
+```{r}
+table1 <- xtabs(~RACE + CAPPUN, data=GSS)
+rowPerc(table1)
+colPerc(table1)
+```
+By looking at the table we see that Black is 34.62 that are in favor of CAPPUN. However Other is 83.33 in favor of CAPPUN, and Whites are 68.66. There is a significant difference between Black opposed to the Other and the White.
+
+
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
 ## Inferential Results
